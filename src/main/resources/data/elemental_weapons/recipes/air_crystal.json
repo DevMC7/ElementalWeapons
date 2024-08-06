@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IC",
+    "CI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "minecraft:cobweb"
+    }
+  },
+  "result": {
+    "item": "elemental_weapons:air_crystal",
+    "count": 1
+  }
+}

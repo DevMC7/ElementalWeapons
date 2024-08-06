@@ -2,15 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "#",
-    "E",
+    "#",
     "/"
   ],
   "key": {
     "#": {
-      "item": "minecraft:moss_block"
-    },
-    "E": {
-      "item": "minecraft:emerald_block"
+      "item": "elemental_weapons:earth_crystal"
     },
     "/": {
       "item": "minecraft:stick"

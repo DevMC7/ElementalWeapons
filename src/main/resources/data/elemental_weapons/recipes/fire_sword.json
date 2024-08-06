@@ -2,18 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "#",
-    "G",
+    "#",
     "/"
   ],
   "key": {
     "#": {
-      "item": "minecraft:fire_charge"
-    },
-    "G": {
-      "item": "minecraft:gold_block"
+      "item": "elemental_weapons:fire_crystal"
     },
     "/": {
-      "item": "minecraft:blaze_rod"
+      "item": "minecraft:stick"
     }
   },
   "result": {

@@ -2,5 +2,13 @@
   "item.elemental_weapons.air_sword": "Air Sword",
   "item.elemental_weapons.fire_sword": "Fire Sword",
   "item.elemental_weapons.water_sword": "Water Sword",
-  "item.elemental_weapons.earth_sword": "Earth Sword"
+  "item.elemental_weapons.earth_sword": "Earth Sword",
+
+  "item.elemental_weapons.air_crystal": "Air Crystal",
+  "item.elemental_weapons.fire_crystal": "Fire Crystal",
+  "item.elemental_weapons.water_crystal": "Water Crystal",
+  "item.elemental_weapons.earth_crystal": "Earth Crystal",
+
+  "itemGroup.elemental_weapons.misc_item_group": "Elemental Weapons Misc",
+  "itemGroup.elemental_weapons.equipment_item_group": "Elemental Weapons Equipment"
 }
