@@ -1,4 +1,4 @@
-package net.devmc.elemental_weapons.item;
+package net.devmc.elemental_weapons.item.swords;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
@@ -51,7 +51,7 @@ public class WaterSwordItem extends SwordItem {
 				}
 
 				user.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 160, 0));
-				user.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 240, 0));
+				user.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 240, 1	));
 
 				if (world instanceof ServerWorld) {
 					((ServerWorld) world).spawnParticles(ParticleTypes.SPLASH, user.getX(), user.getY(), user.getZ(), 100, 2.0, 2.0, 2.0, 0.1);

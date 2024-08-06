@@ -1,4 +1,4 @@
-package net.devmc.elemental_weapons.item;
+package net.devmc.elemental_weapons.item.swords;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

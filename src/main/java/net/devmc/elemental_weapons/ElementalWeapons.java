@@ -9,7 +9,8 @@ public class ElementalWeapons implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ElementalWeaponsItems.register();
+		ElementalWeaponsItems.init();
+		ElementalWeaponsItemGroups.init();
 	}
 
 }

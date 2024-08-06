@@ -1,4 +1,4 @@
-package net.devmc.elemental_weapons.client;
+package net.devmc.elemental_weapons;
 
 import net.fabricmc.api.ClientModInitializer;
 

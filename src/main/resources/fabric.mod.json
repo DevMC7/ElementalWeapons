@@ -7,7 +7,10 @@
   "authors": [
     "DevMC"
   ],
-  "contact": {},
+  "contact": {
+    "homepage": "https://modrinth.com/mod/elemental-weapons",
+    "sources": "https://github.com/DevMC7/ElementalWeapons"
+  },
   "license": "GPL-3.0-only",
   "icon": "assets/elemental_weapons/icon.png",
   "environment": "*",
@@ -16,7 +19,7 @@
   ],
   "entrypoints": {
     "client": [
-      "net.devmc.elemental_weapons.client.ElementalWeaponsClient"
+      "net.devmc.elemental_weapons.ElementalWeaponsClient"
     ],
     "main": [
       "net.devmc.elemental_weapons.ElementalWeapons"
@@ -26,5 +29,8 @@
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
+  },
+  "suggests": {
+    "better-combat": "*"
   }
 }
