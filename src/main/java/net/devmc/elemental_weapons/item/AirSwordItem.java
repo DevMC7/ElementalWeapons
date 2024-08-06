@@ -34,7 +34,7 @@ public class AirSwordItem extends SwordItem {
 
 		if (!world.isClient) {
 			Vec3d lookDirection = user.getRotationVec(1.0F);
-			Vec3d dashVector = lookDirection.multiply(1.7);
+			Vec3d dashVector = lookDirection.multiply(1.85);
 			user.addVelocity(dashVector.x, dashVector.y, dashVector.z);
 			user.velocityModified = true;
 

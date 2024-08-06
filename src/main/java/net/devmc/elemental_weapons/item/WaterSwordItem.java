@@ -50,8 +50,8 @@ public class WaterSwordItem extends SwordItem {
 					entity.velocityModified = true;
 				}
 
-				user.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20, 0));
-				user.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 340, 0));
+				user.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 160, 0));
+				user.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 240, 0));
 
 				if (world instanceof ServerWorld) {
 					((ServerWorld) world).spawnParticles(ParticleTypes.SPLASH, user.getX(), user.getY(), user.getZ(), 100, 2.0, 2.0, 2.0, 0.1);
