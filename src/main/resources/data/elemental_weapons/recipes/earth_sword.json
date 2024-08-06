@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "E",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:moss_block"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elemental_weapons:earth_sword",
+    "count": 1
+  }
+}
