@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "elemental_weapons",
+  "version": "${version}",
+  "name": "Elemental Weapons",
+  "description": "Adds (a) weapon(s) for each element",
+  "authors": [
+    "DevMC"
+  ],
+  "contact": {},
+  "license": "GPL-3.0-only",
+  "icon": "assets/elemental_weapons/icon.png",
+  "environment": "*",
+  "mixins": [
+    "elemental_weapons.mixins.json"
+  ],
+  "entrypoints": {
+    "client": [
+      "net.devmc.elemental_weapons.client.ElementalWeaponsClient"
+    ],
+    "main": [
+      "net.devmc.elemental_weapons.ElementalWeapons"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
