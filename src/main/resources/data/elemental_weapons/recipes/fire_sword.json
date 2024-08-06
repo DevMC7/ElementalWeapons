@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "G",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:fire_charge"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "/": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "elemental_weapons:fire_sword",
+    "count": 1
+  }
+}

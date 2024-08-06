@@ -50,8 +50,8 @@ public class WaterSwordItem extends SwordItem {
 					entity.velocityModified = true;
 				}
 
-				user.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 240, 0));
-				user.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 300, 0));
+				user.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20, 0));
+				user.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 340, 0));
 
 				if (world instanceof ServerWorld) {
 					((ServerWorld) world).spawnParticles(ParticleTypes.SPLASH, user.getX(), user.getY(), user.getZ(), 100, 2.0, 2.0, 2.0, 0.1);
@@ -59,8 +59,10 @@ public class WaterSwordItem extends SwordItem {
 
 				world.playSound(null, user.getX(), user.getY(), user.getZ(),
 						SoundEvents.ENTITY_GENERIC_SPLASH, SoundCategory.PLAYERS, 1.0F, 1.0F);
+
+				user.getItemCooldownManager().set(this, 300);
 			} else {
-				double radius = 10.0;
+				double radius = 8.0;
 				Box area = new Box(user.getBlockPos()).expand(radius);
 				List<LivingEntity> nearbyEntities = world.getEntitiesByClass(LivingEntity.class, area, entity -> entity != user && entity.isAlive());
 
@@ -85,10 +87,11 @@ public class WaterSwordItem extends SwordItem {
 
 				world.playSound(null, user.getX(), user.getY(), user.getZ(),
 						SoundEvents.ENTITY_GENERIC_SPLASH, SoundCategory.PLAYERS, 1.0F, 1.0F);
+
+				user.getItemCooldownManager().set(this, 200);
 			}
 
 			user.setOnFire(false);
-			user.getItemCooldownManager().set(this, 200);
 		}
 
 		return TypedActionResult.success(stack);

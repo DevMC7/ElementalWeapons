@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "L",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:water_bucket"
+    },
+    "L": {
+      "item": "minecraft:lapis_block"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elemental_weapons:water_sword",
+    "count": 1
+  }
+}
