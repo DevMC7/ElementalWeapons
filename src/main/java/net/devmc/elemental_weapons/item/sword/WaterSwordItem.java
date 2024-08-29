@@ -49,7 +49,6 @@ public class WaterSwordItem extends SwordItem {
 				for (Entity entity : nearbyEntities) {
 					Vec3d direction = entity.getPos().subtract(user.getPos()).normalize();
 					entity.addVelocity(direction.x * 2, 0.5, direction.z * 2);
-					ElementalWeapons.LOGGER.log(Level.INFO, "[Air Sword] Applying (" + "" + (direction.x * 2) + "" + (0.5) + "" + (direction.z * 2)  + ") velocity to entity " + entity.getName().getString());
 					entity.velocityModified = true;
 				}
 
