@@ -1,5 +1,6 @@
-package net.devmc.elemental_weapons.item.swords;
+package net.devmc.elemental_weapons.item.sword;
 
+import net.devmc.elemental_weapons.ElementalWeapons;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -20,6 +21,7 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
+import org.apache.logging.log4j.Level;
 
 import java.util.List;
 
@@ -47,6 +49,7 @@ public class WaterSwordItem extends SwordItem {
 				for (Entity entity : nearbyEntities) {
 					Vec3d direction = entity.getPos().subtract(user.getPos()).normalize();
 					entity.addVelocity(direction.x * 2, 0.5, direction.z * 2);
+					ElementalWeapons.LOGGER.log(Level.INFO, "[Air Sword] Applying (" + "" + (direction.x * 2) + "" + (0.5) + "" + (direction.z * 2)  + ") velocity to entity " + entity.getName().getString());
 					entity.velocityModified = true;
 				}
 

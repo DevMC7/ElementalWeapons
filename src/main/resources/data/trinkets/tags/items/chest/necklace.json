@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "elemental_weapons:elemental_necklace_air",
+    "elemental_weapons:elemental_necklace_fire",
+    "elemental_weapons:elemental_necklace_water",
+    "elemental_weapons:elemental_necklace_earth"
+  ]
+}

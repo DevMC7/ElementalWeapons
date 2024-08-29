@@ -20,6 +20,10 @@ public class ElementalWeaponsItemGroups {
 				entries.add(ElementalWeaponsItems.FIRE_CRYSTAL);
 				entries.add(ElementalWeaponsItems.WATER_CRYSTAL);
 				entries.add(ElementalWeaponsItems.EARTH_CRYSTAL);
+
+				entries.add(ElementalWeaponsItems.ANCIENT_RUNE);
+
+				entries.add(ElementalWeaponsItems.ELEMENTAL_NECKLACE);
 			})
 			.build();
 

@@ -1,4 +1,4 @@
-package net.devmc.elemental_weapons.item.swords;
+package net.devmc.elemental_weapons.item.sword;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -15,7 +15,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
 public class EarthSwordItem extends SwordItem {
+
+	public static final List<UUID> thrownEntities= new ArrayList<>();
 
 	public EarthSwordItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
 		super(material, attackDamage, attackSpeed, settings);
@@ -40,12 +46,11 @@ public class EarthSwordItem extends SwordItem {
 				Vec3d direction = new Vec3d(x - userPos.getX(), 0, z - userPos.getZ()).normalize();
 				fallingDirt.setVelocity(direction.x * 0.35, 0.5, direction.z * 0.35);
 				fallingDirt.velocityModified = true;
+				thrownEntities.add(fallingDirt.getUuid());
 			}
 
 			world.playSound(null, user.getX(), user.getY(), user.getZ(),
-					SoundEvents.BLOCK_VINE_BREAK, SoundCategory.PLAYERS, 1.5F, 1.0F);
-			world.playSound(null, user.getX(), user.getY(), user.getZ(),
-					SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 0.8F, 1.0F);
+					SoundEvents.BLOCK_VINE_BREAK, SoundCategory.PLAYERS, 2.0F, 1.0F);
 
 			user.getItemCooldownManager().set(this, 200);
 		}

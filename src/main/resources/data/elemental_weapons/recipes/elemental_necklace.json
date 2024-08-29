@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#T",
+        "E "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:blaze_powder"
+        },
+        "T": {
+            "item": "minecraft:totem_of_undying"
+        },
+        "E": {
+            "item": "elemental_weapons:ancient_rune"
+        }
+    },
+    "result": {
+        "item": "elemental_weapons:elemental_necklace",
+        "count": 1
+    }
+}

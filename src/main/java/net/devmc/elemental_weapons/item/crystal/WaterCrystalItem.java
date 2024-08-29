@@ -1,4 +1,4 @@
-package net.devmc.elemental_weapons.item.crystals;
+package net.devmc.elemental_weapons.item.crystal;
 
 import net.minecraft.item.Item;
 

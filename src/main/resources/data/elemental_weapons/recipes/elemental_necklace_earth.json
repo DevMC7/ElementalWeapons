@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "elemental_weapons:elemental_necklace"
+        },
+        {
+            "item": "elemental_weapons:earth_crystal"
+        }
+    ],
+    "result": {
+        "item": "elemental_weapons:elemental_necklace_earth",
+        "count": 1
+    }
+}

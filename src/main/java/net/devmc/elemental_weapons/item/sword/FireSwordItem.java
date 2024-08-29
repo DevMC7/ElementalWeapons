@@ -1,4 +1,4 @@
-package net.devmc.elemental_weapons.item.swords;
+package net.devmc.elemental_weapons.item.sword;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

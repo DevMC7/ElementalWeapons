@@ -9,6 +9,23 @@
   "item.elemental_weapons.water_crystal": "Water Crystal",
   "item.elemental_weapons.earth_crystal": "Earth Crystal",
 
+  "item.elemental_weapons.ancient_rune": "Ancient Rune",
+  "item.elemental_weapons.ancient_rune.tooltip": "This rune can be used to channel an elemental crystal's energy to cast a spell",
+
+  "item.elemental_weapons.elemental_crown": "Elemental Crown",
+
+  "item.elemental_weapons.elemental_necklace": "Elemental Necklace",
+
+  "item.elemental_weapons.elemental_necklace.air": "Elemental Necklace",
+  "item.elemental_weapons.elemental_necklace.fire": "Elemental Necklace",
+  "item.elemental_weapons.elemental_necklace.water": "Elemental Necklace",
+  "item.elemental_weapons.elemental_necklace.earth": "Elemental Necklace",
+
+  "item.elemental_weapons.elemental_necklace.tooltip.element.air": "Necklace channeling mode: Air",
+  "item.elemental_weapons.elemental_necklace.tooltip.element.fire": "Necklace channeling mode: Fire",
+  "item.elemental_weapons.elemental_necklace.tooltip.element.water": "Necklace channeling mode: Water",
+  "item.elemental_weapons.elemental_necklace.tooltip.element.earth": "Necklace channeling mode: Earth",
+
   "itemGroup.elemental_weapons.misc_item_group": "Elemental Weapons Misc",
   "itemGroup.elemental_weapons.equipment_item_group": "Elemental Weapons Equipment"
 }
