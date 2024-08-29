@@ -1,13 +1,11 @@
 package net.devmc.elemental_weapons.mixin;
 
-import net.devmc.elemental_weapons.ElementalWeapons;
 import net.devmc.elemental_weapons.item.sword.EarthSwordItem;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import org.apache.logging.log4j.Level;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -30,7 +28,6 @@ public abstract class FallingBlockEntityMixin {
 			for (LivingEntity entity : entities) {
 				double initialUpwardVelocity = 0.25;
 				Vec3d knockbackDirection = entity.getPos().subtract(self.getPos()).normalize();
-				ElementalWeapons.LOGGER.log(Level.INFO, "[Earth Sword Dirt Circle] Applying " + knockbackDirection + " velocity to entity " + entity.getName().getString());
 				entity.addVelocity(knockbackDirection.x * 0.75, initialUpwardVelocity, knockbackDirection.z * 0.75);
 				entity.velocityModified = true;
 

@@ -1,6 +1,5 @@
 package net.devmc.elemental_weapons.item.sword;
 
-import net.devmc.elemental_weapons.ElementalWeapons;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -37,7 +36,6 @@ public class AirSwordItem extends SwordItem {
 		if (!world.isClient) {
 			Vec3d lookDirection = user.getRotationVec(1.0F);
 			Vec3d dashVector = lookDirection.multiply(1.85);
-			ElementalWeapons.LOGGER.log(Level.INFO, "[Air Sword] Applying " + dashVector + " velocity to player " + user.getName().getString());
 			user.addVelocity(dashVector.x, dashVector.y, dashVector.z);
 			user.velocityModified = true;
 

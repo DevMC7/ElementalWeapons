@@ -1,6 +1,5 @@
 package net.devmc.elemental_weapons.item.sword;
 
-import net.devmc.elemental_weapons.ElementalWeapons;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -21,7 +20,6 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
-import org.apache.logging.log4j.Level;
 
 import java.util.List;
 
