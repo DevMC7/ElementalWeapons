@@ -64,7 +64,7 @@ public abstract class EntityMixin {
 					player.getAbilities().invulnerable = true;
 					world.createExplosion(self, self.getX(), self.getY(), self.getZ(), 2.0F, false, World.ExplosionSourceType.TNT);
 					player.getAbilities().invulnerable = false;
-					player.getItemCooldownManager().set(stack.getItem(), 100);
+					player.getItemCooldownManager().set(stack.getItem(), 180);
 				}
 				return false;
 			}));

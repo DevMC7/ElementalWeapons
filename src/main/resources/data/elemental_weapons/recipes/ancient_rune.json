@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AE",
+    "PN"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "P": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "elemental_weapons:ancient_rune",
+    "count": 1
+  }
+}
