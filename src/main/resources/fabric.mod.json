@@ -3,7 +3,7 @@
   "id": "elemental_weapons",
   "version": "${version}",
   "name": "Elemental Weapons",
-  "description": "Adds (a) weapon(s) for each element",
+  "description": "Elemental weapons and necklaces for the 4 elements",
   "authors": [
     "DevMC"
   ],
