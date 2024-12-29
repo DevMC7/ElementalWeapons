@@ -11,7 +11,13 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
 public class FireSwordItem extends SwordItem {
+
+	public static final List<UUID> fireballs = new ArrayList<>();
 
 	public FireSwordItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
 		super(toolMaterial, attackDamage, attackSpeed, settings);
@@ -33,10 +39,11 @@ public class FireSwordItem extends SwordItem {
 			FireballEntity fireball = new FireballEntity(EntityType.FIREBALL, world);
 			fireball.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 0F);
 			fireball.setPos(user.getX(), user.getY() + 1.5, user.getZ());
+			fireballs.add(fireball.getUuid());
 			world.spawnEntity(fireball);
 			user.getItemCooldownManager().set(this, 80);
 		}
 
-		return TypedActionResult.success(stack);
+		return TypedActionResult.pass(stack);
 	}
 }

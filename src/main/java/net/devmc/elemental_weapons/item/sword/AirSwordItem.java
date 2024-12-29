@@ -49,6 +49,6 @@ public class AirSwordItem extends SwordItem {
 			user.getItemCooldownManager().set(this, 100);
 		}
 
-		return TypedActionResult.success(stack);
+		return TypedActionResult.pass(stack);
 	}
 }

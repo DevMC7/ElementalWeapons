@@ -94,6 +94,6 @@ public class WaterSwordItem extends SwordItem {
 			user.setOnFire(false);
 		}
 
-		return TypedActionResult.success(stack);
+		return TypedActionResult.pass(stack);
 	}
 }

@@ -1,6 +1,5 @@
 package net.devmc.elemental_weapons.item.sword;
 
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -34,7 +33,6 @@ public class EarthSwordItem extends SwordItem {
 		if (!world.isClient) {
 			double radius = 6.0;
 			BlockPos userPos = user.getBlockPos();
-			BlockState dirtBlockState = Blocks.DIRT.getDefaultState();
 
 			for (double angle = 0; angle < 360; angle += 4) {
 				double radians = Math.toRadians(angle);
@@ -42,7 +40,7 @@ public class EarthSwordItem extends SwordItem {
 				double z = userPos.getZ() + radius * Math.sin(radians);
 				BlockPos dirtPos = BlockPos.ofFloored(x, userPos.getY(), z);
 
-				FallingBlockEntity fallingDirt = FallingBlockEntity.spawnFromBlock(world, dirtPos, dirtBlockState);
+				FallingBlockEntity fallingDirt = FallingBlockEntity.spawnFromBlock(world, dirtPos, Blocks.DIRT.getDefaultState());
 				Vec3d direction = new Vec3d(x - userPos.getX(), 0, z - userPos.getZ()).normalize();
 				fallingDirt.setVelocity(direction.x * 0.35, 0.5, direction.z * 0.35);
 				fallingDirt.velocityModified = true;
@@ -55,6 +53,6 @@ public class EarthSwordItem extends SwordItem {
 			user.getItemCooldownManager().set(this, 200);
 		}
 
-		return TypedActionResult.success(stack);
+		return TypedActionResult.pass(stack);
 	}
 }
